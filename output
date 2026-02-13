@@ -1,0 +1,83 @@
+(myenv) 00063442@anlt-3a-cds1:~/code/binaryclass$ /home/00063442/code/myenv/bin/python /home/00063442/code/binaryclass/train_efficientnet.py
+Downloading: "https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth" to /home/00063442/.cache/torch/hub/checkpoints/efficientnet_b0_rwightman-7f5810bc.pth
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20.5M/20.5M [00:01<00:00, 14.1MB/s]
+/home/00063442/code/myenv/lib/python3.10/site-packages/torch/cuda/__init__.py:1007: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+Epoch 1/15
+Train Loss: 0.1515 Acc: 0.9219
+Val Loss: 0.0828 Acc: 0.9604
+---------------
+Epoch 2/15
+Train Loss: 0.0960 Acc: 0.9417
+Val Loss: 0.0771 Acc: 0.9604
+---------------
+Epoch 3/15
+Train Loss: 0.1030 Acc: 0.9374
+Val Loss: 0.1090 Acc: 0.9604
+---------------
+Epoch 4/15
+Train Loss: 0.0878 Acc: 0.9417
+Val Loss: 0.0914 Acc: 0.9356
+---------------
+Epoch 5/15
+Train Loss: 0.0890 Acc: 0.9454
+Val Loss: 0.0784 Acc: 0.9604
+---------------
+Epoch 6/15
+Train Loss: 0.0840 Acc: 0.9485
+Val Loss: 0.0852 Acc: 0.9604
+---------------
+Epoch 7/15
+Train Loss: 0.0806 Acc: 0.9448
+Val Loss: 0.0858 Acc: 0.9604
+---------------
+Epoch 8/15
+Train Loss: 0.0774 Acc: 0.9436
+Val Loss: 0.0942 Acc: 0.9703
+---------------
+Epoch 9/15
+Train Loss: 0.0775 Acc: 0.9504
+Val Loss: 0.0877 Acc: 0.9604
+---------------
+Epoch 10/15
+Train Loss: 0.0759 Acc: 0.9430
+Val Loss: 0.0874 Acc: 0.9604
+---------------
+Epoch 11/15
+Train Loss: 0.0764 Acc: 0.9479
+Val Loss: 0.0889 Acc: 0.9653
+---------------
+Epoch 12/15
+Train Loss: 0.0798 Acc: 0.9473
+Val Loss: 0.0890 Acc: 0.9653
+---------------
+Epoch 13/15
+Train Loss: 0.0743 Acc: 0.9510
+Val Loss: 0.0884 Acc: 0.9703
+---------------
+Epoch 14/15
+Train Loss: 0.0741 Acc: 0.9492
+Val Loss: 0.0904 Acc: 0.9653
+---------------
+Epoch 15/15
+Train Loss: 0.0802 Acc: 0.9473
+Val Loss: 0.0883 Acc: 0.9653
+---------------
+
+Training Complete. Evaluating on Unseen TEST SET...
+
+Confusion Matrix:
+[[ 94   3]
+ [  3 102]]
+
+Detailed Report:
+              precision    recall  f1-score   support
+
+       fraud       0.97      0.97      0.97        97
+        real       0.97      0.97      0.97       105
+
+    accuracy                           0.97       202
+   macro avg       0.97      0.97      0.97       202
+weighted avg       0.97      0.97      0.97       202
+
+Model saved as best_fraud_model.pth
